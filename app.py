@@ -8,4 +8,15 @@ def hello():
 
 @app.route("/contatos")
 def contato():
-    return "Dani Miron"
+    return """<html> 
+    <head> 
+        <title> Aula HTML </title>
+    </head>
+    <body>
+        <h1> Daniele Miron </h1>
+        <h2> daniele@miron </h2>
+        <h3> (11) 9 9999-0000 </h3>
+    </body>
+    </html>"""
+
+
