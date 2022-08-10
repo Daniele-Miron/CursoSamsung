@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Contatos </title>
+    </head>
+    <body>
+
+            {% if usuario[2] == "Aluna"%} #<- aqui é o início da condição if 
+            <h2>Bem vinda Aluna!</h2> #<- caso a verificação retorne true (seja verdadeira) será 
+            {{usuario[1]}}
+    {%else%}
+            <h2>Bem vindo Aluno</h2>
+    {%endif%}
+
+            {% for aluno in alunos %}
+                    <h3>{{aluno}}</h3>
+            {%endfor%}
+
+        <h1>{{nome}}</h1>
+        <b>{{nome}}</b>
+        <h1> Daniele Miron </h1>
+        <h2> daniele@miron </h2>
+        <h3> (11) 9 9999-0000 </h3>
+        <a href="https://www.oceanbrasil.com/"> Click para ir a Ocean Brasil</a>
+        <br>
+        <a href="https://www.oceanbrasil.com/" target="_blank"> Ir para Ocean Brasil</a>
+    </body>
+</html>
